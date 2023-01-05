@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Try</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="nav">
+            
+            </div> 
+            <div id="offer" class="offer" >
+                <h2>✦ Hello world! ✦</h2>
+         
+                    <p>
+                        Enter something here → <input type="text" id="input1" class="try" placeholder="something...">
+                        <br></br>
+                        and here → <input type="text" id="input2" class="try" placeholder="something...">
+                        <br></br>
+                        <button onclick="newbutton()" class="btn">I need new fields</button> 
+                        <button onclick="createButtons()" class="btn">I need new buttons</button>
+                        <button onclick="output()" class="btn">Show!</button>
+                        <button onclick="location.reload(); return false;"class="btn">refresh page</button>
+                        <button onclick="resetValues()" class="btn"> (\/)_0_0_(\/) </button>
+                    </p> 
+            </div>
+        </div>
+        <section id="about" class="about"> 
+            <div id="container" class="container">
+                <div class="description" id="description">
+                    <div class="desc-left" id="desc-left">
+                        <br></br>
+                        <h3>New fields</h3>
+                    </div>
+                    <div class="desc-right" id="desc-right" onclick="output()">
+                        <br></br>
+                        <h3>New buttons</h3>
+                    </div>
+                </div>
+            </div>
+             </section> 
+        </header>
+    
+</body>
+<script src ="app.js" defer></script>
+</html>
