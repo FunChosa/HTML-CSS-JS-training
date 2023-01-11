@@ -17,6 +17,7 @@
           <li><a href="#">Contacts</a></li>  
         </ul>
     </header>
+
     <section>
         <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
         <img src="./images/bird1.png" id="bird1">
@@ -26,7 +27,8 @@
         <img src="./images/rocks.png" id="rocks">
         <img src="./images/water.png" id="water">
     </section>
-    <section>
+
+    <!-- <section> -->
         <div class="sec">
             <h2>Parallax Scrolling Effects</h2>
             <p>
@@ -39,24 +41,33 @@
 
             </p>
         </div>
-        <script>
-            let text = document.querySelector('#text');
-            let bird1 = document.querySelector('#bird1');
-            let bird2 = document.querySelector('#bird2');
-            let btn = document.querySelector('#btn');
-            let rocks = document.querySelector('#rocks')        
-            let forest = document.querySelector('#forest');
-            let water = document.querySelector('#water');
-            let header = document.querySelector('#header');
+    <!-- </section> -->
 
-            window.addEventListener('scroll', function(){
-                let value = window.scrollY;
+    <script>
+        let text = document.querySelector('#text');
+        let bird1 = document.querySelector('#bird1');
+        let bird2 = document.querySelector('#bird2');
+        let btn = document.querySelector('#btn');
+        let rocks = document.querySelector('#rocks')        
+        let forest = document.querySelector('#forest');
+        let water = document.querySelector('#water');
+        let header = document.querySelector('#header');
 
-                text.style.top = 50 + value * -0,5 + '%';
-            })
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
 
-        </script>
-    </section>
-</body>
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
 
+        })
+
+    </script>
+    </body>
 </html>
