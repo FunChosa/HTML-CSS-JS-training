@@ -21,7 +21,7 @@
         <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
         <img src="./images/bird1.png" id="bird1">
         <img src="./images/bird2.png" id="bird2">
-        <img src="./images/forest.png" id="forrest">
+        <img src="./images/forest.png" id="forest">
         <a href="#" id="btn">Explore</a>
         <img src="./images/rocks.png" id="rocks">
         <img src="./images/water.png" id="water">
@@ -39,6 +39,23 @@
 
             </p>
         </div>
+        <script>
+            let text = document.querySelector('#text');
+            let bird1 = document.querySelector('#bird1');
+            let bird2 = document.querySelector('#bird2');
+            let btn = document.querySelector('#btn');
+            let rocks = document.querySelector('#rocks')        
+            let forest = document.querySelector('#forest');
+            let water = document.querySelector('#water');
+            let header = document.querySelector('#header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+
+                text.style.top = 50 + value * -0,5 + '%';
+            })
+
+        </script>
     </section>
 </body>
 
