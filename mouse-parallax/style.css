@@ -44,7 +44,7 @@ body{
     min-height: 100%;
 }
 ._container {
-    min-width: 1000px;
+    max-width: 1000px;
     margin: 0px auto;
     padding: 50px 20px;
 }
@@ -90,9 +90,6 @@ min-height: 100vh;
     top: -10%;
     left: -10%;
     z-index: 1;
-}
-.images-parallax{
-
 }
 
 .images-parallax__item{
@@ -150,9 +147,6 @@ min-height: 100vh;
     transform: translate(0px, -100%);
     background: linear-gradient(180deg, rgba(11, 29, 38, 0) 5%, #0b1d25 100%);
     
-}
-.content__container{
-
 }
 
 .content__title{
