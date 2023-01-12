@@ -21,4 +21,19 @@ window.onload = function () {
         let positionX = 0, positionY = 0;
         let coordXprocent = 0, coordYprocent = 0;
     }
+
+    function setMouseParallaxStyle(){
+        const distX = coordXprocent - positionX;
+        const distY = coordYprocent - positionY;
+
+        positionX = positionX + (distX * speed);
+        positionY = positionY + (distY * speed);
+
+
+        clouds.style.cssText = `transform: translate(${positionX / forClouds}%, ${positionY / forClouds}%)`;
+        mountains.style.cssText = `transform: translate(${positionX / forMountains}%, ${positionY / forMountains}%)`;
+        human.style.cssText = `transform: translate(${positionX / forHuman}%, ${positionY / forHuman}%)`;
+
+
+    }
 }
