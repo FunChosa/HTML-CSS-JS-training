@@ -16,7 +16,7 @@ section{
     justify-content: space-between;
     align-items: center;
     background: #0062be;
-    transition: 0.5s;
+    transition: 0.5s; /* скорость смены цвета фона */
 }
 
 header{
@@ -133,7 +133,7 @@ header ul li a
     display: inline-block; /* https://developer.mozilla.org/en-US/docs/Web/CSS/display */
     margin: 0 20px; 
     cursor: pointer; /* при наведение показывает кликательность */
-    transition: 0.5s;
+    transition: 0.5s; /* скорость анимации подлетания */
 }
 
 .thumb li:hover
