@@ -126,3 +126,47 @@ header ul li a
     transform: translateX(-50%);
     display: flex;
 }
+
+.thumb li
+{
+    list-style: none; /*убирает черные точки, но только не у тебя ))*/
+    display: inline-block; /* https://developer.mozilla.org/en-US/docs/Web/CSS/display */
+    margin: 0 20px; 
+    cursor: pointer; /* при наведение показывает кликательность */
+    transition: 0.5s;
+}
+
+.thumb li:hover
+{
+    transform: translateY(-15px); /* при наведении подлетает*/
+}
+
+.thumb li img
+{
+    max-width: 40px;
+}
+
+.sci
+{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%); /* при наведении подлетает*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* выстраиваем по вертикали */
+}
+
+.sci li
+{
+  list-style: none;  
+}
+
+.sci li a
+{
+    display: inline-block;
+    filter: invert(1); /**/
+    margin: 5px 0;
+    transform: scale(0.6); /* уменьшает по коэффициенту */
+}
