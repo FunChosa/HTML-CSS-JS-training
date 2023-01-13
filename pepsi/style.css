@@ -110,7 +110,7 @@ header ul li a
     display: flex;
     padding-right: 50px;
     margin-top: 50px;
-    justify-content: flex-end;
+    justify-content: flex-end; /* https://developer.mozilla.org/ru/docs/Web/CSS/justify-content */
 }
 
 .content .imgBox img
@@ -129,7 +129,7 @@ header ul li a
 
 .thumb li
 {
-    list-style: none; /*убирает черные точки, но только не у тебя ))*/
+    list-style: none; /*убирает черные точки, но только не у тебя )) */
     display: inline-block; /* https://developer.mozilla.org/en-US/docs/Web/CSS/display */
     margin: 0 20px; 
     cursor: pointer; /* при наведение показывает кликательность */
@@ -165,8 +165,8 @@ header ul li a
 
 .sci li a
 {
-    display: inline-block;
-    filter: invert(1); /**/
+    display: inline-block; /* https://developer.mozilla.org/en-US/docs/Web/CSS/display */
+    filter: invert(1);  /* https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
     margin: 5px 0;
     transform: scale(0.6); /* уменьшает по коэффициенту */
 }

@@ -32,9 +32,9 @@
         </div>
     </section>
     <ul class="thumb">
-        <li><img src="./images/pepsi001.png" onclick="imgSlider('pepsi001.png');ChangeBgColor('#0062be')"></li>
-        <li><img src="./images/pepsi002.png" onclick="imgSlider('pepsi002.png');ChangeBgColor('#e60c2c')"></li>
-        <li><img src="./images/pepsi003.png" onclick="imgSlider('pepsi003.png');ChangeBgColor('#1e1e1e')"></li>
+        <li><img src="./images/pepsi001.png" onclick="imgSlider('./images/pepsi001.png');changeBgColor('#0062be')"></li>
+        <li><img src="./images/pepsi002.png" onclick="imgSlider('./images/pepsi002.png');changeBgColor('#e60c2c')"></li>
+        <li><img src="./images/pepsi003.png" onclick="imgSlider('./images/pepsi003.png');changeBgColor('#1e1e1e')"></li>
     </ul>
     <ul class="sci">
         <li><a href="#"><img src="./images/facebook.png"></a></li>
@@ -45,10 +45,11 @@
     <script type="text/javascript">
         function imgSlider(anything){
             document.querySelector('.pepsi').src = anything;
-        }
-        function ChangeBgColor(color){
             const sec = document.querySelector('.sec');
-            sec.style.backgroung = color;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.backgroundColor = color;
         }
     </script>
 </body>
